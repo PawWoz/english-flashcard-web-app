@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppings', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+  body {
+    background-color: #f1f1f1;
+    position: relative;
+    padding-bottom: 58px;
+    min-height: 100vh;
+  }
+
+
+nav{
+    background: #1a1a1a;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 120px;
+    color: white;
+}
+
+.logo i {
+    color: white;
+}
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.middle-content {
+    text-align: center;
+}
+
+#menu-btn {
+    display: none;
+  }
+
+  .icons #menu-btn {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 576px){
+    #menu-btn {
+      display: inline-block;
+    }
+
+    .fa-times {
+      transform: rotate(180deg);
+    }
+
+    .header {
+      padding: 2rem;
+    }
+  
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-top: .1rem solid var(black);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: background 0.3s;
+    }
+  
+    .header .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      background: rgba(0, 0, 0, 0.8); 
+    }
+  
+    .header .navbar a {
+      display: block;
+      margin: 0,5rem;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      text-align: left;
+    }
+  
+
+    
+  }
+
+
+
