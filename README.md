@@ -1,5 +1,4 @@
-# Tytuł projektu
-Fiszki - system do nauki języka angielskiego
+# Fiszki - system do nauki języka angielskiego
 
 ## Wymagania systemowe
 * wersja apache'a: 2.4.41
